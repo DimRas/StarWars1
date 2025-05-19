@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <canvas id="gameCanvas"></canvas>
+      <div id="ui">
+        <div id="score">0</div>
+        <div id="pauseButton">❚❚</div>
+        <div id="gameOver" class="hidden">
+          <h2>GAME OVER</h2>
+          <p>Score: <span id="finalScore">0</span></p>
+          <button id="restartButton">Play Again</button>
+        </div>
+        <div id="startMenu">
+          <h1>STAR WARS</h1>
+          <button id="startButton">Start Game</button>
+        </div>
+        <div id="pauseMenu" class="hidden">
+          <h2>PAUSED</h2>
+          <button id="resumeButton">Resume Game</button>
+          <button id="quitButton">Quit Game</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/enemies.js"></script>
+    <script src="js/projectiles.js"></script>
+    <script src="js/game.js"></script>
+  </body>
+</html>
